@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <title>Jaded London</title>
+            <meta name="author" content="Ella Villacreses">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" href="styles.css">
+
+        </head>
+
+    <body>
+    <header>
+        <h1>Jaded London</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="contact.html">Sign In</a></li>
+            </ul>
+        </nav>
+                <button id="darkToggle">Dark Mode</button>
+    </header>
+
+    <div class>
+        <img src="images/Studx.jpg" alt="Jaded London text logo" id="mainLogo">
+    </div>
+    <main>
+        <h2>About</h2>
+        <p>Discover global inspired street style and cutting edge trends. Designed in London, delivered worldwide.</p>
+        <p>Founded by siblings Jade and Grant Goulden in 2013.</p>
+
+        <div class>
+            <img src="images/ShopTag.jpg" alt="Shop banner" id="shopTag">
+        </div>
+
+        <div class="image-row">
+            <img src="images/JDGrey.jpg" alt="A model wearing a gray tshirt">
+            <img src="images/JDSkirt.jpg" alt="A close up of a black studded and belted skirt">
+            <img src="images/JDShoes.jpg" alt="Two models wearing camoflague printed shoes">
+        </div>
+
+        <div class="content-group">
+            <h3>Menswear</h3>
+                <p>Who said girls get to have all the fun?</p>
+          </div>
+
+        <div class="image-row">
+            <img src="images/MensBlue.webp" alt="A model in a blue polo and oversized khaki shorts">
+            <img src="images/MensJeans.avif" alt="A pair of baggy blue jeans with red script">
+            <img src="images/MensPolo.avif" alt="A model in a blue and black polo">
+        </div>
+
+        <section id="guessGame">
+            <h3>Guess the # for a Discount</h3>
+            
+            <label for="userGuess">Please enter a number between 1 and 10.</label>
+            <input type="number" id="userGuess" min="1" max="10">
+            <button id="guessButton">Click to Reveal</button>
+            <p id="result"></p>
+        </section>
+
+        <div class>
+            <img src="images/ContactBanner.jpg" alt="Contact us banner" id="contactTag">
+        </div>
+
+        <section id="form">
+            <h4>Contact Jaded London</h4>
+            <p>To subscribe for limited offers, fill out the form below. Required fields are marked with an asterisk (<span class="required">*</span>).</p>
+            <form id="contactForm">
+
+                <label for="my-name">Full Name<span class="required">*</span></label>
+                <input type="text" name="my-name" id="my-name" required>
+                <span id="nameError"></span>
+
+                <label for="my-phone">Phone<span class="required">*</span></label>
+                <input type="tel" name="my-phone" id="my-phone">
+                <span id="phoneError"></span>
+
+                <label for="my-email">Email<span class="required">*</span></label>
+			    <input type="email" name="my-email" id="my-email" required>
+                <span id="emailError"></span>
+				
+			<fieldset>
+				<legend>Preferred Method of Contact</legend>
+				
+                <input type="radio" name="contact-pref" id="pref-email" value="email" checked>
+                <label for="pref-email">Email</label>
+
+                <input type="radio" name="contact-pref" id="pref-phone" value="phone">
+                <label for="pref-phone">Phone</label>
+			</fieldset>
+				
+			<label for="my-comments">Comments<span class="required">*</span></label>
+			<textarea name="my-comments" id="my-comments"></textarea>
+            <span id="commentsError"></span>
+			
+			<input type="submit" name="my-submit" id="my-submit" value="Submit Form">
+		
+		    </form>
+
+            <div id="myModal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Thank you for submitting your information!</p>
+            </div>
+        </div>
+    </section>
+
+        <footer>
+            <p>Copyright &copy;2026 - Ella Villacreses</p>
+            <p>This site is for educational purposes only.</p>
+        </footer>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
